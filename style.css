@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Nanum Pen";
+  src: url("../NanumPenScript-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 50px !important;
+  }
+  i {
+    font-size: 30px !important;
+  }
+  a {
+    font-size: 23px !important;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #010409;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+}
+
+h1.title {
+  font-family: Nanum Pen;
+  font-size: 120px;
+  padding: 0;
+  margin: 0;
+  color: var(--snow);
+}
+
+i.icons {
+  font-size: 40px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: var(--snow);
+  transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+}
+
+i.icons:hover {
+  z-index: 4;
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  transform: scale(1.5);
+}
